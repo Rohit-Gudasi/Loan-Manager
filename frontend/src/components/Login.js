@@ -14,7 +14,7 @@ function Login({ type }) {
     setError('');
     setLoading(true);
 
-    const baseUrl = 'http://localhost:5000';
+    const baseUrl = 'https://loan-manager-backend-o2m9.onrender.com';
     const endpoint = type === 'admin' ? '/api/admin/login' : '/api/login';
     const url = `${baseUrl}${endpoint}`;
 
